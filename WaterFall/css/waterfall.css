@@ -17,7 +17,7 @@ a {
 #m-result-pds ul>li{
     width: 44%;
     display: inline-block;
-    min-height: 15rem;
+    min-height: 11rem;
     margin: 1rem 4%;
     background: #ffffff;
     position: absolute;
@@ -39,7 +39,7 @@ a {
     display: inline-block;
     color: #000000;
     font-size: 1rem;
-    line-height: 2rem;
+    line-height: 1.2rem;
     padding:0 1rem;
     overflow: hidden;
     word-break: break-all
@@ -57,7 +57,7 @@ a {
 
 #m-result-pds .m-product .pdprice{
     color:#727272;
-    padding: 0 0 1rem 1rem;
+    padding: 1rem;
     display: inline-block;
     font-size: 1rem;
 }
