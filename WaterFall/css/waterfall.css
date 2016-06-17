@@ -1,9 +1,16 @@
 /*
  * waterfall.css style file
 */
-html,body{
+html{
     margin: 0;
-    padding: 0
+    padding: 0;
+}
+
+body, ul, li, h3 { 
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+    font: bold 12px "微软雅黑";
 }
 
 a {
