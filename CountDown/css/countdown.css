@@ -1,0 +1,70 @@
+/*
+ * waterfall.css style file
+*/
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body, ul, li, h3 { 
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+    font: bold 12px "微软雅黑";
+}
+
+a {
+    text-decoration: none;
+}
+
+#m-result-pds,#m-result-pds .u_order_splist{
+    background: #f5f7fb
+}
+
+#m-result-pds ul>li{
+    width: 44%;
+    display: inline-block;
+    min-height: 11rem;
+    margin: 1rem 4%;
+    background: #ffffff;
+    position: absolute;
+}
+
+#m-result-pds .m-product .pdimg{
+    width: 100%;
+    display: inline-block;
+    height: 8rem;
+}
+
+#m-result-pds .m-product img{
+    width: 100%;
+    margin-bottom: 1rem;
+    max-height: 15rem
+}
+
+#m-result-pds .m-product .pdname{
+    display: inline-block;
+    color: #000000;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding:0 1rem;
+    overflow: hidden;
+    word-break: break-all
+}
+
+#m-result-pds .m-product .wishList{
+    float: right;
+    padding-right: 1rem;
+    color: #c0c0c0
+}
+
+#m-result-pds .m-product .wishList.red{
+    color: #ff6248
+}
+
+#m-result-pds .m-product .pdprice{
+    color:#727272;
+    padding: 1rem;
+    display: inline-block;
+    font-size: 1rem;
+}
