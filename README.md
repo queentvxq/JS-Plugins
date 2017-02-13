@@ -6,7 +6,7 @@ Use "position:absolute" and caculate the value of top
 set 1second Interval
 
 
-Points
+Front-end Knowleage Points
 --------
 
 * [ES6](#es6)<br />
@@ -33,57 +33,19 @@ Points
 * [OO/FP](#OO/FP)<br />
   difference/advantage
 
-Usage
----------------
-
-### node.js
-
-```
-$> npm install protobufjs [--save --save-prefix=~]
-```
+ES6
+-------------
+Generator异步编程解决方案
 
 ```js
-var protobuf = require("protobufjs");
+function* helloworldGenerator(){
+  yield 'hello';
+  yield 'world';
+  return 'ending';
+}
+var hw = helloworldGenerator();
 ```
 
-### Browsers
-
-Development:
-```
-<script src="//cdn.rawgit.com/dcodeIO/protobuf.js/6.X.X/dist/protobuf.js"></script>
-```
-
-Production:
-```
-<script src="//cdn.rawgit.com/dcodeIO/protobuf.js/6.X.X/dist/protobuf.min.js"></script>
-```
-
-**NOTE:** Remember to replace the version tag with the exact [release](https://github.com/dcodeIO/protobuf.js/tags) your project depends upon.
-
-The `protobuf` namespace will always be available globally / also supports AMD loaders.
-
-Distributions
+Compatibility
 -------------
-
-The library supports both reflection-based and code-based use cases:
-
-1. Parsing protocol buffer definitions (.proto files) to reflection
-2. Loading JSON descriptors to reflection
-3. Generating static code without any reflection features
-
-There is a suitable distribution for each of these:
-
-|         | Gzipped | Downloads                    | How to require                  | Description
-|---------|---------|------------------------------|---------------------------------|-------------
-| full    | 18.5kb  | [dist][dist-full]            | `require("protobufjs")`         | All features. Works with everything.
-| light   | 15.5kb  | [dist/light][dist-light]     | `require("protobufjs/light")`   | All features except tokenizer, parser and bundled common types. Works with JSON definitions, pure reflection and static code.
-| minimal | 6.0kb+  | [dist/minimal][dist-minimal] | `require("protobufjs/minimal")` | Just enough to run static code. No reflection.
-
-In case of doubt you can just use the full library.
-
-[dist-full]: https://github.com/dcodeIO/protobuf.js/tree/master/dist
-[dist-light]: https://github.com/dcodeIO/protobuf.js/tree/master/dist/light
-[dist-minimal]: https://github.com/dcodeIO/protobuf.js/tree/master/dist/minimal
-
-Examples
---------
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/protobuf.svg)](https://saucelabs.com/u/protobuf)
