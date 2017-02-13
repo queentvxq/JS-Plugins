@@ -16,8 +16,8 @@ Front-end Knowleage Points
   离线存储/Websocket兼容性
   
 * [CSS3](#css3)<br />
-  transform/animation
-  
+  transform/animation/flex/垂直水平居中
+  
 * [HTTP](#http)<br />
   200/301/304/401/404/500/502/重定向.
   
@@ -49,7 +49,15 @@ yield语句就是暂停标志
 
 HTML5
 -------------
-manifest
+manifest离线存储
+Websocket ie10+
+
+CSS3
+-------------
+transform
+animation
+canvas
+水平、垂直居中的几种方法
 
 HTTP
 -------------
