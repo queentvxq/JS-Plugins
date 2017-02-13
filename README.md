@@ -35,8 +35,8 @@ Front-end Knowleage Points
 
 ES6
 -------------
-Generator异步编程解决方案
-
+Generator(生成器)异步编程解决方案
+调用Generator函数,返回一个遍历器对象,具有位置记忆功能。
 ```js
 function* helloworldGenerator(){
   yield 'hello';
@@ -45,6 +45,7 @@ function* helloworldGenerator(){
 }
 var hw = helloworldGenerator();
 ```
+yield语句就是暂停标志
 
 Compatibility
 -------------
