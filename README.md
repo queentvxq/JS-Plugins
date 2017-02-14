@@ -88,10 +88,11 @@ canvas
 position:fixed/absolute/static/relative/inherit(ie8+)
 box-sizing: content-box || border-box || inherit(ie8+\safari3.0+\chrome1.0+\ff1.0+)
 水平、垂直居中的几种方法:
-1.inline元素 line-height=height & text-align:center
-2.flex
-3.position:absolute transform:50%
-4.margin:0 auto
+
+* inline元素 line-height=height & text-align:center
+* flex
+* position:absolute transform:50%
+* margin:0 auto
 
 HTTP
 -------------
@@ -106,16 +107,22 @@ HTTP
 
 Cookie etc.
 -------------
-cookie在浏览器和服务器间来回传递
-sessionStorage和localStorage的存储空间更大
-sessionStorage和localStorage有更多丰富易用的接口
-sessionStorage和localStorage各自独立的存储空间
-localStorage 长期存储数据，浏览器关闭后数据不丢失
-sessionStorage 数据在浏览器关闭后自动删除
+* cookie在浏览器和服务器间来回传递
+* sessionStorage和localStorage的存储空间更大
+* sessionStorage和localStorage有更多丰富易用的接口
+* sessionStorage和localStorage各自独立的存储空间
+* localStorage 长期存储数据，浏览器关闭后数据不丢失
+* sessionStorage 数据在浏览器关闭后自动删除
 
 Compatibility
 -------------
 [![Sauce Test Status](https://saucelabs.com/browser-matrix/protobuf.svg)](https://saucelabs.com/u/protobuf)
+
+algorithm
+------------
+* 创建一个新的数组存放结果
+* 创建一个空对象 
+* for循环时每次取出一个元素与对象对比，不重复：放入结果数组，同时将元素作为对象的一个属性，并设为true，存入到上一步建立的对象中
 
 设计模式
 -------------
