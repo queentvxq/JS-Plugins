@@ -54,9 +54,11 @@ var hw = helloworldGenerator();
 yield语句就是暂停标志
 
 Promise(resolve/reject)
-Prototype 1. .then() 2. .catch() 
-3. .finally() 4. .all() 5. .race()
-6. .resolve() 7. .reject()
+
+* 1. .then() 2. .catch() ---------prototype
+* 3. .finally() 4. .all() 5. .race()
+* 6. .resolve() 7. .reject()
+
 
 HTML5
 -------------
@@ -84,7 +86,7 @@ transform
 animation
 canvas
 position:fixed/absolute/static/relative/inherit(ie8+)
-box-sizing: content-box || border-box || inherit
+box-sizing: content-box || border-box || inherit(ie8+\safari3.0+\chrome1.0+\ff1.0+)
 水平、垂直居中的几种方法:
 1.inline元素 line-height=height & text-align:center
 2.flex
@@ -117,15 +119,15 @@ Compatibility
 
 设计模式
 -------------
-1.单例模式
-2.工厂模式
-3.观察者模式(发布者&订阅者)
+* 单例模式
+* 工厂模式
+* 观察者模式(发布者&订阅者)
 
 libs
 -------------
-1.react渲染流程
-2.react differ算法
-3.react 虚拟DOM/react 优化工作
-4.react native
-5.jquery deffer promise
-6.requireJS原理 模块化管理 依赖加载
+* react渲染流程
+* react differ算法
+* react 虚拟DOM/react 优化工作
+* react native
+* jquery deffer promise
+* requireJS原理 模块化管理 依赖加载
