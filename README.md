@@ -32,10 +32,16 @@ Front-end Knowleage Points
 
 * [OO/FP](#OO/FP)<br />
   difference/advantage
-
+  
+* [algorithm](#algorithm)<br />
+  快排/去重
+  
+* [libs](#libs)<br />
+  react/angular/vue/jquery/requireJS
+  
 ES6
 -------------
-Generator(生成器)异步编程解决方案
+Generator(生成器)异步编程解决方案(.next())
 调用Generator函数,返回一个遍历器对象,具有位置记忆功能。
 ```js
 function* helloworldGenerator(){
@@ -47,9 +53,29 @@ var hw = helloworldGenerator();
 ```
 yield语句就是暂停标志
 
+Promise(resolve/reject)
+Prototype 1. .then() 2. .catch() 
+3. .finally() 4. .all() 5. .race()
+6. .resolve() 7. .reject()
+
 HTML5
 -------------
 manifest离线存储
+```manifest
+  CACHE MANIFEST
+  #上面一句必须
+  #v1.0.0
+  #需要缓存的文件
+  CACHE:
+  a.js
+  b.css
+  #不需要缓存的文件
+  NETWORK:
+  *
+  #无法访问页面
+  FALLBACK:
+  404.html
+```
 Websocket ie10+
 
 CSS3
@@ -57,7 +83,13 @@ CSS3
 transform
 animation
 canvas
-水平、垂直居中的几种方法
+position:fixed/absolute/static/relative/inherit(ie8+)
+box-sizing: content-box || border-box || inherit
+水平、垂直居中的几种方法:
+1.inline元素 line-height=height & text-align:center
+2.flex
+3.position:absolute transform:50%
+4.margin:0 auto
 
 HTTP
 -------------
@@ -82,3 +114,18 @@ sessionStorage 数据在浏览器关闭后自动删除
 Compatibility
 -------------
 [![Sauce Test Status](https://saucelabs.com/browser-matrix/protobuf.svg)](https://saucelabs.com/u/protobuf)
+
+设计模式
+-------------
+1.单例模式
+2.工厂模式
+3.观察者模式(发布者&订阅者)
+
+libs
+-------------
+1.react渲染流程
+2.react differ算法
+3.react 虚拟DOM/react 优化工作
+4.react native
+5.jquery deffer promise
+6.requireJS原理 模块化管理 依赖加载
