@@ -140,7 +140,45 @@ algorithm
 ```
 
 **排序**
-
+```js
+//将待排记录分成独立的两个部分，
+//找出枢轴，实现枢轴左边的值都小于枢轴的值，枢轴右边都大于枢轴的值
+//不断递归
+function quicksort(arr,low,high){
+        var pivot;
+        if(low < high){
+            pivot = partition(arr,low,high);
+			console.log(pivot)
+            quicksort(arr,low,pivot-1);
+            quicksort(arr,pivot+1,high);
+        }
+		console.log(arr)
+        return arr;
+}
+//找出枢轴
+function partition(arr,low,high){
+        var pivot = arr[low];
+        while(low <= high){
+            while(low <= high && arr[high] >= pivot){
+                high--;
+            }
+            swap(arr,low,high);
+            while(low <= high && arr[low] < pivot){
+                low++;
+            }
+            swap(arr,low,high);
+        }
+        return low;
+}
+	
+function swap(arr,low,high){
+        var temp;
+        temp = arr[low];
+        arr[low] = arr[high];
+        arr[high] = temp;
+}
+var afterSort = quicksort(arr,0,arr.length-1);
+```
 设计模式
 -------------
 * 单例模式
