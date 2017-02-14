@@ -82,11 +82,12 @@ Websocket ie10+
 
 CSS3
 -------------
-transform
-animation
-canvas
-position:fixed/absolute/static/relative/inherit(ie8+)
-box-sizing: content-box || border-box || inherit(ie8+\safari3.0+\chrome1.0+\ff1.0+)
+* transform
+* animation
+* canvas
+* position:fixed/absolute/static/relative/inherit(ie8+)/initial(设为默认值 ie不支持)
+* box-sizing: content-box || border-box || inherit(ie8+\safari3.0+\chrome1.0+\ff1.0+)
+
 水平、垂直居中的几种方法:
 
 * inline元素 line-height=height & text-align:center
@@ -120,9 +121,25 @@ Compatibility
 
 algorithm
 ------------
+**去重**时间复杂度O(n)
 * 创建一个新的数组存放结果
 * 创建一个空对象 
 * for循环时每次取出一个元素与对象对比，不重复：放入结果数组，同时将元素作为对象的一个属性，并设为true，存入到上一步建立的对象中
+
+```js
+ var arr = [2,5,4,3,4,6,9,18];
+	var arrNew = new Array();
+	var baseObj = new Object();
+	for(var i=0;i<arr.length;i++){
+		if(!baseObj[arr[i]]){
+			arrNew.push(arr[i])
+			baseObj[arr[i]] = true
+		}
+	}
+	console.log(arrNew)//[2, 5, 4, 3, 6, 9, 18]
+```
+
+**排序**
 
 设计模式
 -------------
@@ -133,7 +150,7 @@ algorithm
 libs
 -------------
 * react渲染流程
-* react differ算法
+* react differ算法:修改DOM时间复杂度O(n)/浏览器本身为O(n2)
 * react 虚拟DOM/react 优化工作
 * react native
 * jquery deffer promise
