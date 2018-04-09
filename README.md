@@ -67,8 +67,9 @@ var hw = helloworldGenerator();
 yield语句就是暂停标志
 
 Promise(resolve/reject)
-
-* 1. .then() 2. .catch() ---------prototype
+* 链式调用
+* 1. .then()
+* 2. .catch() ---------prototype
 * 3. .finally() 4. .all() 5. .race()
 * 6. .resolve() 7. .reject()
 
@@ -91,7 +92,8 @@ manifest离线存储
   FALLBACK:
   404.html
 ```
-Websocket ie10+
+* Websocket ie10+
+* script标签 defer & async:
 
 CSS
 -------------
@@ -230,3 +232,8 @@ compile
 -------------
 * webpack
 * gulp
+
+安全
+-------------
+* CSRF
+* XSS
