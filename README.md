@@ -15,7 +15,7 @@ Front-end Knowleage Points
 * [HTML5](#html5)<br />
   离线存储/Websocket兼容性
   
-* [CSS3](#css3)<br />
+* [CSS](#css)<br />
   transform/animation/flex/垂直水平居中
   
 * [HTTP](#http)<br />
@@ -42,6 +42,16 @@ Front-end Knowleage Points
 * [compile](#compile)<br />
   webpack/gulp
   
+  
+JS
+-------------
+* 继承
+* 原型链
+* call apply
+* ‘==’类型转换：对于基本类型Boolean，Number，String，三者之间做比较时，总是向 Number进行类型转换，然后再比较；如果有Object，那么将Object转化成这三者，再进行比较；对于null和undefined，只有 x，y分别是它们时才相同，其他都为false。
+* 深拷贝
+* 正则表达式
+
 ES6
 -------------
 Generator(生成器)异步编程解决方案(.next())
@@ -83,13 +93,17 @@ manifest离线存储
 ```
 Websocket ie10+
 
-CSS3
+CSS
 -------------
 * transform
 * animation
 * canvas
 * position:fixed/absolute/static/relative/inherit(ie8+)/initial(设为默认值 ie不支持)
 * box-sizing: content-box || border-box || inherit(ie8+\safari3.0+\chrome1.0+\ff1.0+)
+* BFC&IFC:
+> 一个页面是由很多个 Box 组成的，元素的类型和 display 属性决定了这个 Box 的类型。不同类型的 Box，会参与不同的 Formatting Context。
+>> Block level的box会参与形成BFC，比如display值为block，list-item，table的元素。
+>> Inline level的box会参与形成IFC，比如display值为inline，inline-table，inline-block的元素。
 
 水平、垂直居中的几种方法:
 
